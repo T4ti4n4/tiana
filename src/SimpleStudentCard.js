@@ -4,7 +4,7 @@ function SimpleStudentCard(props) {
   return (
     <div>
       <h2>El estudiante es: {props.name}</h2>
-      <9>El estudiante es: {props.name2}</9>
+      <h1>El estudiante es: {props.name2}</h1>
     </div>
   );
 }
