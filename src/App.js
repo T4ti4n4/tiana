@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import ProductCard from "./ProductCard";
+import ProductImage1 from "./assets/PC.jpeg";
+import ProductImage2 from "./assets/Portatil.jpeg";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ProductCard
+        imageSrc={ProductImage1}
+        productName="Computador"
+        ProductPrice="29.00"
+      />
+      <ProductCard
+        imageSrc={ProductImage2}
+        productName="Portatil"
+        ProductPrice="29.00"
+      />
     </div>
   );
 }
 
 export default App;
+
+// Se exporta desde ProductCard porque es el padre de los hijos 
+
